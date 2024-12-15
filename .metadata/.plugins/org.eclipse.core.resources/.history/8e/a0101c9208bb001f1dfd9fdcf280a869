@@ -1,0 +1,14 @@
+package jaimelopezAA2;
+
+import java.sql.Connection;
+
+public class Main {
+    public static void main(String[] args) {
+        Connection Conexion = Conexion.conectar();
+        if (Conexion != null) {
+            System.out.println("Conexión exitosa a la base de datos.");
+        } else {
+            System.out.println("Fallo la conexión.");
+        }
+    }
+}
